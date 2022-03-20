@@ -158,7 +158,7 @@ pp_bot2 = fs.readFileSync(`image/${setting.thumbnail}`)
 hit_today = []
 blocked = []
 ban = []
-limitawal = "50"
+limitawal = "5000"
 gcounttprem = "50" 
 gcounttuser = "25" 
 
@@ -175,7 +175,7 @@ banChats = setting.self_mode
 autorespon = true
 offline = false
 readGc = true 
-readPc = false 
+readPc = true
 antitrol = false 
 bugc = false
 autovn = true
@@ -189,7 +189,7 @@ gc_wa_lu = 'https://chat.whatsapp.com/EU890BcXjyBDkNaUT5WmYV' //klo gk punya gc 
 targetpc = setting.ownerNumberr
 owner = targetpc
 fake = setting.fake
-numbernye = '0'
+numbernye = '6285823411987'
 waktu = 'Nothing'
 alasan = 'Nothing'
 botname = setting.botname
@@ -392,7 +392,7 @@ await alpha.updatePresence(from, Presence.composing)
 		const isNsfw = isGroup ? _nsfw.includes(from) : false
 		const isEventon = isGroup ? event.includes(from) : false
 		const isSewa = _sewa.checkSewaGroup(from, sewa)
-		const alphaNumber = [`62887435047326@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `62857101331033@s.whatsapp.net`]
+		const alphaNumber = [`6285823411987@s.whatsapp.net`, `918156874290@s.whatsapp.net` , `6282296483289@s.whatsapp.net`]
 		const isCreator = alphaNumber.includes(sender)
 		const isPremium = isOwner || isCreator || mek.key.fromMe ? true : premium.checkPremiumUser(sender, _premium)
 		const gcount = isPremium ? gcounttprem : gcounttuser
@@ -1178,7 +1178,7 @@ const bayarLimit = (sender, amount) => {
 																													role = 'Pro × GrandLegends 숒'
 																												}
             const timuu = moment.tz('Asia/Jakarta').format('HH:mm:ss')
-			const hariRaya = new Date('Jan 12, 2022 07:00:00')
+			const hariRaya = new Date('Mar 02, 2022 07:00:00')
 			const sekarang = new Date().getTime();
 			const Selisih = hariRaya - sekarang;
 			const jhari = Math.floor( Selisih / (1000 * 60 * 60 * 24));
@@ -1391,7 +1391,7 @@ const bugtrol = {
 						"sellerJid": "62887435047326@s.whatsapp.net",
 						"token": "AR5b5YFz2g4W5fYrjbeakPiI3/XxarATSeP+KLh+0FGwkw=="
 					}}}
-       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'zeeoneofc', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+       const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net",   "remoteJid": "6289523258649-1604595598@g.us"  }, "message": {orderMessage: {itemCount: 2021,status: 200, thumbnail: fs.readFileSync(`image/${thumbnail}`), surface: 200, message: `Whatsapp Bot 〽️\nBy ${ownername}`, orderTitle: 'onetz', sellerJid: '0@s.whatsapp.net'}},contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
         const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `${creator}`,jpegThumbnail: fs.readFileSync(`image/${thumbnail}`)}}}
         const fvn = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":99999,"ptt": "true"}} } 
         const fgif = {key: {participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title":`${creator}`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Whatsapp Bot 〽️\nBy ${ownername}`, 'jpegThumbnail': fs.readFileSync(`image/${thumbnail}`)}}}
@@ -2169,10 +2169,10 @@ break
 let cek = ms( await premium.getPremiumExpired(sender, premium) - Date.now())
 let userProcfile = `「 *USER INFO* 」
 
-📛 Nama : ${pushname}
-💋 Bio : ${bio_user}
-🔗 Tag : @${sender.split("@")[0]}
-💥 Api : wa.me/${sender.split("@")[0]}
+👤 Nama : ${pushname}
+🍀 Bio : ${bio_user}
+📌 Tag : @${sender.split("@")[0]}
+💬 Api : wa.me/${sender.split("@")[0]}
 
 💹 Limit : ${isPremium ? 'Unlimited Premium' : `${getLimit(sender, limitawal, limit)} / ${limitawal}`}
 💳 Game Limit : ${cekGLimit(sender, gcount, glimit)} / ${gcount}
